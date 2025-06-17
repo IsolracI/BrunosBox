@@ -51,7 +51,7 @@ public class ScoreCard {
                 "\t" + getBCorner() + "\t" + getRCorner() + "\n" + 
                 "\t\t  " + getNumRounds() + " rounds\n" +
                 "   Round   Score   Round   Score   Round\n" +
-                "   Score   Total           Total   Score\n" +
+                "   Score   Total           Total   Score\n"
                 ;
     }
 
