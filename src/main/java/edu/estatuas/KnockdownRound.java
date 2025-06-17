@@ -1,17 +1,16 @@
 package edu.estatuas;
 
-import java.util.ArrayList;
+public class KnockdownRound implements Round{
 
-public class RegularRound implements Round{
     private final String roundScore;
     private byte redBoxerScore;
     private byte blueBoxerScore;
 
-    RegularRound(String roundScore) {
+    KnockdownRound(String roundScore) {
         this.roundScore = roundScore.replaceAll("\\s", "");
         this.parseBoxerRoundScore();
     }
-    
+
     public String getRoundScore() {
         return this.roundScore;
     }
@@ -22,11 +21,14 @@ public class RegularRound implements Round{
         this.blueBoxerScore = Byte.parseByte(scores[1]);
     }
 
+    @Override
     public byte getRedBoxerScore() {
         return this.redBoxerScore;
     }
 
+    @Override
     public byte getBlueBoxerScore() {
         return this.blueBoxerScore;
     }
+    
 }
