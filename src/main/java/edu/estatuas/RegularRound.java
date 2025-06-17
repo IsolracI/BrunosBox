@@ -7,11 +7,6 @@ public class RegularRound implements Round{
     private byte redBoxerScore;
     private byte blueBoxerScore;
 
-    @Override
-    public void boxerRoundScore() {
-        
-    }
-
     RegularRound(String roundScore) {
         this.roundScore = roundScore.replaceAll("\\s", "");
         this.parseBoxerRoundScore();
