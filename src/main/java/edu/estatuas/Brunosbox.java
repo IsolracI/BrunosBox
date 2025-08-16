@@ -99,6 +99,7 @@ public class Brunosbox
         System.out.println("\n\t Regular round\t" + round.getRedBoxerScore() +
                             " - " + round.getBlueBoxerScore());
 
+
         /*
          * Carga en la tarjeta blanca 
          * los puntos de todos los rounds
@@ -126,6 +127,55 @@ public class Brunosbox
 
         whiteScoreCard.loadJudgeScoreCard(data[0]);
         System.out.println(whiteScoreCard);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /*
          * Crea una clase llamada KnockdownRound
