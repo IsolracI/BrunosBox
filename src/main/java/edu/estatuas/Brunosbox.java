@@ -2,8 +2,7 @@ package edu.estatuas;
 
 import com.github.freva.asciitable.AsciiTable;
 
-public class Brunosbox 
-{
+public class Brunosbox {
     public static void main( String[] args ) {
 
         System.out.println("\n - I see three of them out there." + 
