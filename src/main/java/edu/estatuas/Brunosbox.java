@@ -2,8 +2,7 @@ package edu.estatuas;
 
 import com.github.freva.asciitable.AsciiTable;
 
-public class Brunosbox 
-{
+public class Brunosbox {
     public static void main( String[] args ) {
 
         System.out.println("\n - I see three of them out there." + 
@@ -99,7 +98,6 @@ public class Brunosbox
         System.out.println("\n\t Regular round\t" + round.getRedBoxerScore() +
                             " - " + round.getBlueBoxerScore());
 
-
         /*
          * Carga en la tarjeta blanca 
          * los puntos de todos los rounds
@@ -127,55 +125,6 @@ public class Brunosbox
 
         whiteScoreCard.loadJudgeScoreCard(data[0]);
         System.out.println(whiteScoreCard);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         /*
          * Crea una clase llamada KnockdownRound
