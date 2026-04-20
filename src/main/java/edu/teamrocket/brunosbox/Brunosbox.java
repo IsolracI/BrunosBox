@@ -1,4 +1,4 @@
-package edu.estatuas;
+package edu.teamrocket.brunosbox;
 
 import com.github.freva.asciitable.AsciiTable;
 
