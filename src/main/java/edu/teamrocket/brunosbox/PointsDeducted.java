@@ -1,6 +1,6 @@
 package edu.teamrocket.brunosbox;
 
-public class PointsDeducted {
+public class PointsDeducted implements Round{
     private final String roundScore;
     private byte redBoxerScore;
     private byte blueBoxerScore;
