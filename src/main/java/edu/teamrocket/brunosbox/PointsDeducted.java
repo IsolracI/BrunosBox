@@ -14,15 +14,15 @@ public class PointsDeducted {
         return this.roundScore;
     }
 
-    private byte substractPoints(String score) {
-        String numbers[] = score.replaceAll("\\s", "").split(",");
+    private byte getBoxerScore(String score) {
+        String[] numbers = score.replaceAll("\\s", "").split(",");
         byte finalScore;
 
         if (Byte.parseByte(numbers[0]) > Byte.parseByte(numbers[1])) {
-            finalScore = (byte) (Byte.parseByte(numbers[0]) - 1);
+            finalScore = Byte.parseByte(numbers[0]);
         }
         else  {
-            finalScore = (byte) (Byte.parseByte(numbers[1]) - 1);
+            finalScore = Byte.parseByte(numbers[1]);
         }
 
         return finalScore;
@@ -30,16 +30,22 @@ public class PointsDeducted {
 
     private void parseBoxerRoundScore() {
         String[] scores = this.roundScore.split("-", 2);
-//        this.redBoxerScore = Byte.parseByte(score[0]);
-//        this.blueBoxerScore = Byte.parseByte(score[1]);
 
-        for (String score : scores) {
-            if (score.contains(",")) {
-
-            }
+        if (scores[0].contains(",")) {
+            this.redBoxerScore = getBoxerScore(scores[0]);
+            this.blueBoxerScore = Byte.parseByte(scores[1]);
+        }
+        else {
+            this.redBoxerScore = Byte.parseByte(scores[0]);
+            this.blueBoxerScore = getBoxerScore(scores[1]);
         }
     }
+
+    public byte getRedBoxerScore() {
+        return this.redBoxerScore;
+    }
+
+    public byte getBlueBoxerScore() {
+        return this.blueBoxerScore;
+    }
 }
-
-
-
