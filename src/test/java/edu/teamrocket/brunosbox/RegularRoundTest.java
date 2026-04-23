@@ -2,7 +2,7 @@ package edu.teamrocket.brunosbox;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.teamrocket.brunosbox.RegularRound;
+
 import org.junit.jupiter.api.Test;
 
 public class RegularRoundTest {
