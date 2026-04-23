@@ -69,7 +69,7 @@ public class ScoreCard {
         int redBoxerFinalScore = 0;
 
         for (Round round : getRounds()) {
-            redBoxerFinalScore =+ round.getRedBoxerScore();
+            redBoxerFinalScore += round.getRedBoxerScore();
         }
         return redBoxerFinalScore;
     }
@@ -78,7 +78,7 @@ public class ScoreCard {
         int blueBoxerFinalScore = 0;
 
         for (Round round : getRounds()) {
-            blueBoxerFinalScore =+ round.getBlueBoxerScore();
+            blueBoxerFinalScore += round.getBlueBoxerScore();
         }
         return blueBoxerFinalScore;
     }
