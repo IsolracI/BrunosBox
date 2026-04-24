@@ -22,12 +22,24 @@ public class ScoreCard {
         this.redCorner = rCorner;
     }
 
+    public String getRCorner() {
+        return this.redCorner;
+    }
+
     public void setBCorner(String bCorner) {
         this.blueCorner = bCorner;
     }
 
+    public String getBCorner() {
+        return this.blueCorner;
+    }
+
     private void setJudgeScoreCard(String[] judgeScoreCard) {
         this.judgeScoreCard = judgeScoreCard;
+    }
+
+    public String getColor() {
+        return this.color;
     }
 
     public byte getNumRounds() {
@@ -80,5 +92,30 @@ public class ScoreCard {
             blueBoxerFinalScore += round.getBlueBoxerScore();
         }
         return blueBoxerFinalScore;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder scoreCard = new StringBuilder();
+        // primera línea
+        scoreCard.append("\t\t");
+        scoreCard.append(getColor());
+        scoreCard.append("\n");
+        // segunda línea
+        scoreCard.append("\t");
+        scoreCard.append(getRCorner());
+        scoreCard.append("\t");
+        scoreCard.append(getBCorner());
+        scoreCard.append("\n");
+        // tercera línea
+        scoreCard.append("\t\t\t\t");
+        scoreCard.append(getNumRounds());
+        scoreCard.append(" rounds");
+        scoreCard.append("\n");
+        // cuarta línea
+        scoreCard.append("Round\tScore\t");
+
+        return scoreCard.toString();
+
     }
 }
